@@ -24,10 +24,12 @@ def odd_range(num1, num2):
 def has_lower_case(s):
     # YOUR CODE HERE
     for i in s:
-        if 97 <= ord(s[i]) <= 122:
+        if 97 <= ord(i) <= 122:
             return True
         else:
-            return False
+            continue
+    return False
+
 
 # Part C. fizz_buzz
 # Define a function fizz_buzz(num) that takes an integer num
