@@ -37,11 +37,11 @@ class TestPythonBasicsOne(unittest.TestCase):
         self.assertEqual(pythonBasics3.multiple_words(" one-sided? "), False)
 
         # Please add three more test cases following the order above
-        elf.assertEqual(pythonBasics3.multiple_words("RegEx\\ttoooooooohard"), False)
+        self.assertEqual(pythonBasics3.multiple_words("RegEx\\ttoooooooohard"), False)
 
-        self.assertEqual(pythonBasics3.multiple_words("It's-all-one-word"), False)
+        self.assertEqual(pythonBasics3.multiple_words("Po-is-not-smart-at-all"), False)
 
-        self.assertEqual(pythonBasics3.multiple_words(" one-sided? "), False)
+        self.assertEqual(pythonBasics3.multiple_words(" whitespaceatthebeginning? "), False)
 
 # #Test case for reserved_us_tld
 #     def test_reserved_us_tld(self):

@@ -18,7 +18,7 @@ def starts_with_non_number(s):
     is_char = True
     # search through the string, if the string contain any number
     # then set is_char to false
-    if re.search("^[0-9].*$", s):
+    if re.match("^[0-9].*$"):
         is_char = False
     return is_char
 
@@ -30,14 +30,12 @@ def starts_with_non_number(s):
 # with at least one character on either side!
 def multiple_words(s):
     # declare a var that hold the boolean
-    is_multiple_word = True
+    is_multiple_word = False
     # search through the string, if the string white space
     # then set is_char to false
-    if re.match("\s", s):
-        is_multiple_word = False
+    if re.search(".\s.", s):
+        is_multiple_word = True
     return is_multiple_word
-
-    return
 
 
 # Part C. reserved_us_tld
