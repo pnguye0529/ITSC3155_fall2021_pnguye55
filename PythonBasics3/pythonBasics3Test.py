@@ -23,21 +23,25 @@ class TestPythonBasicsOne(unittest.TestCase):
         self.assertEqual(pythonBasics3.starts_with_non_number("2 if Po is amazing"), False)
 
 
-# #Test case for multiple_words
-#     def test_multiple_words(self):
-#
-#         self.assertEqual(pythonBasics3.multiple_words("That's 10/10"), True)
-#
-#         self.assertEqual(pythonBasics3.multiple_words(" "), False)
-#
-#         self.assertEqual(pythonBasics3.multiple_words("Different\twhitespace"), False)
-#
-#         self.assertEqual(pythonBasics3.multiple_words("It's-all-one-word"), False)
-#
-#         self.assertEqual(pythonBasics3.multiple_words(" one-sided? "), False)
-#
-#         # Please add three more test cases following the order above
+#Test case for multiple_words
+    def test_multiple_words(self):
 
+        self.assertEqual(pythonBasics3.multiple_words("That's 10/10"), True)
+
+        self.assertEqual(pythonBasics3.multiple_words(" "), False)
+
+        self.assertEqual(pythonBasics3.multiple_words("Different\\twhitespace"), False)
+
+        self.assertEqual(pythonBasics3.multiple_words("It's-all-one-word"), False)
+
+        self.assertEqual(pythonBasics3.multiple_words(" one-sided? "), False)
+
+        # Please add three more test cases following the order above
+        elf.assertEqual(pythonBasics3.multiple_words("RegEx\\ttoooooooohard"), False)
+
+        self.assertEqual(pythonBasics3.multiple_words("It's-all-one-word"), False)
+
+        self.assertEqual(pythonBasics3.multiple_words(" one-sided? "), False)
 
 # #Test case for reserved_us_tld
 #     def test_reserved_us_tld(self):
