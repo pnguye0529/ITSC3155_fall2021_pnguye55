@@ -51,8 +51,9 @@ def new_note():
         new_record = Note(title, text, today)
         db.session.add(new_record)
         db.session.commit()
-        return redirect(url_for('get_notes')
-    return render_template('new.html', user=a_user)
+        return redirect(url_for('get_notes'))
+    else:
+        return render_template('new.html', user=a_user)
 
 app.run(host=os.getenv('IP', '127.0.0.1'),port=int(os.getenv('PORT', 5000)),debug=True)
 
