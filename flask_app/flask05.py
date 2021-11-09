@@ -67,7 +67,7 @@ def update_note(note_id):
     # retrieve note from database
     note = db.session.query(Note).filter_by(id=note_id).one()
 
-    return render_template('new.html', user=a_user)
+    return render_template('new.html', note=note, user=a_user)
 
 app.run(host=os.getenv('IP', '127.0.0.1'),port=int(os.getenv('PORT', 5000)),debug=True)
 
